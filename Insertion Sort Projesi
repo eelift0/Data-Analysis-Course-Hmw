@@ -1,0 +1,37 @@
+Insertion Sort Projesi 
+soru #1 
+[22,27,16,2,18,6] verilen dizi . Bu dizinin insertion sort türüne göre aşamaları aşağıdaki gibidir.
+Adım 1 ; 22 , 27 den küçük olduğu için yerinde kalır , sıra 27'ye geçer.(Liste aynı kalır.)
+Adım 2 ; 27 , 22'den büyük olduğundan yerinde kalır sıra 16'ya geçer. (Liste aynı kalır.)
+Adım 3 ; 16 , 27 ve 22'den küçük olduğu için her ikisinin de önüne geçer ve en aşa yerleşir. Sıra 2 ye geçer. (Liste = [16,22,27,2,18,6])
+Adım 4 ; 2 tekrardan 16, 22 ve 27'den küçük olduğundan hepsini geçer ve en başa yerleşir.Sıra 18' e geçer. (Liste = [2,16,22,27,18,6])
+Adım 5 ; 18 , 22 ve 27'den küçük ancak 16'dan büyüktür haliyle 16 ve 22'nin arasına yerleşir. Sıra 6' ya geçer. (Liste = [2,16,18,22,27,6])
+Adım 6 ; 6 ; 16,18,22 ve 27'den küçüktür. 2 ve 16 arasına yerleşir. Liste insertion sort'a göre sıralanmıştır. (Liste = [2,6,16,18,22,27]) 
+Sonuç = [ 2,6,16,18,22,27 ]
+.
+.
+Big-O-Notation
+Elimizdeki dizinin Big-O-Notation'u O(n) şeklindedir.
+.
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer?
+18 sonuçtaki listede ortada yer alır bu da average case'in bir örneği olarak karşımıza çıkar.
+.
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız. 
+Adım 1 ; verilen listeden en küçük eleman 2'dir. Selection sort' a göre 2, 7 ile yer değiştirir.
+ [2,3,5,8,7,9,4,15,6]
+Adım 2 ; 2 listeden hariç tutulur. Kalan listede en küçük değer 3'tür, 3 zaten 2'den sonra geldiği için olduğu gibi kalır.
+ [2,3,5,8,7,9,4,15,6] 
+Adım 3 ; 2 ve 3 listeden hariç tutulur.Kalan listeden en küçük değer 4'tür. 4, 3'ten sonra gelmelidir, 5 ile yer değiştirir.
+ [2,3,4,8,7,9,5,15,6] 
+Adım 4 ; Sıralanmış değerler harici en küçük değer 5'tir. 5, 8'ile yer değiştirir. 
+ [2,3,4,5,7,9,8,15,6] 
+İlk 4 adım aşağıdaki gibidir. 
+ [2,3,5,8,7,9,4,15,6]
+ [2,3,5,8,7,9,4,15,6]
+ [2,3,4,8,7,9,5,15,6]
+ [2,3,4,5,7,9,8,15,6] 
+.
+.
+.
+--Son--
+ 
