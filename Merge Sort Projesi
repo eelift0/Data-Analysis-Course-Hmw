@@ -1,0 +1,25 @@
+Merge Sort Projesi 
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+.
+Soru #1 Çözümü;
+Adım 1 ; [16,21,11,8,12,22] dizisi 2'ye bölünür öncelikle.
+ [16,21,11] ve [8,12,22] 
+Adım 2 ; ilk sol yarı sıralanır 2'ye bölünüp.
+ [16] ve [21,11] -> [16] ve [11,21] 
+Adım 3 ; sağ yarı zaten sıralanmış olduğundan ekstra işleme ihtiyaç duyulmaz.
+Adım 4 ; sol yarı birleştirilir.
+ [11,16,21] 
+Adım 5 ; sağ ve sol yarı birleştirilir.
+ [8,11,12,16,21,22] 
+Sonuç ; dizi sıralanmış şekilde şöyle görünür.
+ [8,11,12,16,21,22] 
+.
+.
+.
+Soru #2 Çözümü;
+Big-O-Notation her durumda merge sort işlemi için -> O(n logn) .
+.
+--Son--
