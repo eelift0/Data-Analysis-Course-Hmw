@@ -1,0 +1,91 @@
+Binary Search Tree Projesi
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız. 
+.
+Adım 1 ; root'umuzu 2 olarak belirleyelim. 4, 2'den büyük olduğundan sağında konumlanır.
+       2
+      / \
+         4
+Adım 2 ; sıra 9'a geldi. 9, 2'den büyük olduğundan tekrar sağına geçer, aynı zamanda 4'ten de büyüktür, 4'ün de sağına geçer.
+       2
+      / \
+         4 
+        /  \
+            9
+Adım 3; sıra 0 'da. 0, 2'den küçük olduğundan 2'nin soluna geçer.
+       2
+      / \
+     0    4 
+        /  \
+            9
+Adım 4 ; 6, 2'den ve 4'ten büyük ancak 9'dan küçük olduğu için 9'un soluna geçer.
+       2
+      / \
+     0    4 
+        /  \
+            9
+           /  \ 
+          6
+Adım 5 ; 3 ,2'den büyük ama 4'ten küçüktür. 4'ün soluna yerleşir.
+       2
+      / \
+     0    4 
+        /  \
+       3     9
+           /  \ 
+          6
+Adım 6 ;Sıra 8'de. 8 , 2'den büyük, 4'ten büyük ancak 9'dan küçüktür. 9'un solunda ; 6'dan büyük olduğu için 6'nın sağında konumlanır.
+       2
+      / \
+     0    4 
+        /  \
+       3     9
+           /  \ 
+          6 
+         / \
+            8
+Adım 7 ; Sıra 1'e geçti. 1, 2'den küçüktür yani 2'nin solunda ancak 0'dan büyük olduğu için 0'ın sağında kalır.
+       2
+     /  \
+   0      4 
+ / \    /  \
+    1   3     9
+           /  \ 
+          6 
+         / \
+            8
+Adım 8 ; sıra 5'te. 5 , 2 ve 4'ten büyüktür ama 9'dan küçüktür. 9'un solunda, 6'dan da küçük olduğundan 6'nın solunda yer alır.
+       2
+      /  \
+   0      4 
+ / \    /  \
+    1   3     9
+           /  \ 
+          6 
+         / \
+        5   8
+Adım 9 ; son sayımız 7 kaldı. 7, 2 ve 4'ten büyük yani her ikisinin de sağında olmalı. Aynı zamanda 9'dan küçük yani 9'un solunda olmalı
+6'dan büyük , 6'nın sağında 8'den de küçük olduğundan 8'in solunda olmalı.
+        2
+      /   \
+   0       4 
+    \    /  \
+    1   3     9
+            /  
+          6 
+         / \
+        5   8
+           / \
+          7
+Neticede ağacımız aşağıdaki görünüme sahip olur.
+        2
+      /   \
+   0       4 
+    \    /  \
+    1   3     9
+            /  
+          6 
+         / \
+        5   8
+           / \
+          7
+--Son--
